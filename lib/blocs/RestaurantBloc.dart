@@ -14,9 +14,7 @@ class RestaurantBloc {
     _restaurantFetcher.sink.add(restaurantData);
   }
 
-  dispose() {
-    _restaurantFetcher.close();
-  }
+  dispose() => _restaurantFetcher.close();
 }
 
 final bloc = RestaurantBloc();
